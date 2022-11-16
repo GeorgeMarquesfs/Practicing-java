@@ -1,15 +1,18 @@
 package Entidades;
 
+
+import java.util.Date;
+
 public class Pessoa {
 
     String nome;
     String CPF;
-    String dataNascimento;
+    Date dataNascimento;
     String profissao;
     String email;
 
 
-    public Pessoa(String nome, String CPF, String dataNascimento, String profissao, String email) {
+    public Pessoa(String nome, String CPF, Date dataNascimento, String profissao, String email) {
         this.nome = nome;
         this.CPF = CPF;
         this.dataNascimento = dataNascimento;
@@ -33,11 +36,11 @@ public class Pessoa {
         this.CPF = CPF;
     }
 
-    public String getDataNascimento() {
+    public Date getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(String dataNascimento) {
+    public void setDataNascimento(Date dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
